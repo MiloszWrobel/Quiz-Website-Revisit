@@ -8,7 +8,6 @@ export default function QuestionTimer({ timeout, onTimeout }) {
 
     return () => {
       clearTimeout(timer);
-      setRemainingTime(timeout);
     };
   }, [onTimeout, timeout]);
 
@@ -19,7 +18,6 @@ export default function QuestionTimer({ timeout, onTimeout }) {
 
     return () => {
       clearInterval(interval);
-      setRemainingTime(timeout);
     };
   }, []);
 
